@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пекарня "Golden Crust" | Свежая выпечка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #fff8f0;
+            color: #4a2c2a;
+        }
+
+        .header {
+            padding: 1.5rem 5%;
+            background: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            color: #d4a373;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://images.unsplash.com/photo-1509440159596-0249088772ff') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cta-button {
+            background: #d4a373;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .features {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            background: white;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .feature-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #4a2c2a;
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero {
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">callnick выпечка</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Искусство настоящей выпечки</h1>
+            <button class="cta-button">Посмотреть меню</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <img src="bread-icon.png" alt="Свежий хлеб">
+            <h3>Ежедневная свежая выпечка</h3>
+            <p>Традиционные рецепты и натуральные ингредиенты</p>
+        </div>
+        
+        <div class="feature-card">
+            <img src="clock-icon.png" alt="Режим работы">
+            <h3>Работаем с 7:00</h3>
+            <p>Свежий хлеб к вашему утру</p>
+        </div>
+        
+        <div class="feature-card">
+            <img src="heart-icon.png" alt="С любовью">
+            <h3>Сделано с любовью</h3>
+            <p>Ручная работа и внимание к деталям</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 callnick выпечка</p>
+        <p>г. Минск, ул. Хлебная 15</p>
+        <p>Ежедневно с 7:00 до 20:00</p>
+    </footer>
+</body>
+</html>
