@@ -1,0 +1,9 @@
+User-agent: Yandex
+
+Disallow: /download
+Sitemap: https://pirogov.by/sitemap1.xml
+
+User-agent: *
+
+Disallow: /catalog
+Sitemap: https://pirogov.by/sitemap1.xml
